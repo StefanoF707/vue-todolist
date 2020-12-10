@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+        <title>Vue Todo list</title>
+    </head>
+    <body>
+
+        <h1>LA TUA TODO LIST</h1>
+
+        <div id="root">
+            <div class="container">
+                <div class="container-top">
+                    <input type="text" id="user-input" name="text-field" value="" placeholder="Scrivi qui">
+
+                    <button type="button" id="confirm_btn" name="button">Aggiungi</button>
+                </div>
+
+                <div class="container-bottom">
+                    <ul id="to-do">
+                        <li v-for="(todo, index) in todoArray">
+                            {{ todoArray[index] }}
+                            <span class="delete">X</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="js/script.js" charset="utf-8"></script>
+    </body>
+</html>

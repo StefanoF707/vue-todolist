@@ -17,6 +17,9 @@ let app = new Vue ({
                 this.todoInputValue = "";
             }
         },
+        deleteItem: function (index) {
+            this.todoArray.splice(index, 1);
+        }
     }
 });
 

@@ -23,7 +23,7 @@
                     <ul id="to-do">
                         <li v-for="(todo, index) in todoArray">
                             {{ todoArray[index] }}
-                            <span class="delete">X</span>
+                            <span class="delete" @click="deleteItem(index)">X</span>
                         </li>
                     </ul>
                 </div>

@@ -9,7 +9,7 @@ let app = new Vue ({
         todoInputValue: "",
     },
     methods: {
-        getInputValue: function (array) {
+        addNewItem: function (array) {
             if (this.todoInputValue == "") {
                 alert("Campo vuoto");
             } else {
@@ -19,7 +19,7 @@ let app = new Vue ({
         },
         deleteItem: function (index) {
             this.todoArray.splice(index, 1);
-        }
+        },
     }
 });
 

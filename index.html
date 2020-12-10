@@ -14,9 +14,9 @@
         <div id="root">
             <div class="container">
                 <div class="container-top">
-                    <input type="text" id="user-input" name="text-field" value="" placeholder="Scrivi qui">
+                    <input type="text" id="user-input" v-model="todoInputValue" placeholder="Scrivi qui">
 
-                    <button type="button" id="confirm_btn" name="button">Aggiungi</button>
+                    <button type="button" id="confirm_btn" name="button" @click="getInputValue(todoArray)">Aggiungi</button>
                 </div>
 
                 <div class="container-bottom">

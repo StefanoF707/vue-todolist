@@ -6,6 +6,17 @@ let app = new Vue ({
             "Vino",
             "Pane",
         ],
+        todoInputValue: "",
+    },
+    methods: {
+        getInputValue: function (array) {
+            if (this.todoInputValue == "") {
+                alert("Campo vuoto");
+            } else {
+                array.push(this.todoInputValue);
+                this.todoInputValue = "";
+            }
+        },
     }
 });
 
